@@ -39,6 +39,5 @@ class AddresseModel extends Model
     public function getById($idAdresse)
     {
         return $this->findById($idAdresse);
-        //return $this->query("SELECT * FROM $this->table WHERE id =$idAdresse");
     }
 }

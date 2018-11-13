@@ -4,7 +4,7 @@ namespace Core\Model;
 
 use Core\Database\Database;
 
-class Model
+abstract class Model
 {
 
     protected $model;

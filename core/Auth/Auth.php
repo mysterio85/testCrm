@@ -4,7 +4,7 @@ namespace Core\Auth;
 
 use Core\Database\Database;
 
-class Auth
+class Auth extends AbstractAuth
 {
 
     private $database;
@@ -14,17 +14,6 @@ class Auth
         $this->database = $database;
     }
 
-    /**
-     * Récupération de l'utilisateur courant avec retour de la session s'il est connecté
-     * @return bool
-     */
-    public function getUserId()
-    {
-        if ($this->logged()) {
-            return $_SESSION['auth'];
-        }
-        return false;
-    }
 
     /**
      * Mathode de connexion de l'utilisateur a partir de son login et du mot de passe encoder en md5
@@ -49,13 +38,5 @@ class Auth
         return false;
     }
 
-    /**
-     * Méthode pour vérifier si l'utilisateur est connecté
-     * @return bool
-     */
-    public function logged()
-    {
-        return isset($_SESSION['auth']);
-    }
 
 }

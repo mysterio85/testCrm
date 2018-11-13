@@ -7,7 +7,7 @@
 <h2 align="center">Installation</h2>
 
 ```bash
-1 - cloner le repository 
+1 - cloner le repository [Dézipper le .zip ]
 2 - initialiser composer et mettre à jour
 3 - Créartion d'une base de données
 4 - modifier le fichier de configuration (leboncoin\config\config.php)
@@ -163,6 +163,13 @@ ALTER TABLE `addresses`
 
 ALTER TABLE `contacts`
   ADD CONSTRAINT `contacts_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+COMMIT;
+```
+
+### `Sql - initialisation user de test `
+```js
+INSERT INTO `users` (`id`, `login`, `email`, `password`) VALUES
+(1, 'admin', 'lebonoin@test.fr', '21232f297a57a5a743894a0e4a801fc3');
 COMMIT;
 ```
 
