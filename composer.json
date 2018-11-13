@@ -1,0 +1,8 @@
+{
+    "require": {
+        "twig/twig": "~1.0",
+        "michelf/php-markdown": "^1.6",
+        "twig/extensions": "^1.4",
+        "phpunit/phpunit": "~5.2"
+    }
+}
