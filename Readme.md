@@ -19,7 +19,7 @@
 ### `Cloner le projet`
 ```git
 Repository :  
-git clone repo
+git clone git@github.com:mysterio85/testCrm.git
 ```
 
 <h2 align="center">composer</h2>
